@@ -268,7 +268,8 @@ button.acerca:hover {
     font-size: 15px;
     letter-spacing: 1.8px;
     font-weight: bold;
-    margin-right: 2rem;
+    margin-left: 21rem;
+    /* margin-right: 2rem; */
     margin-top: 1rem;
 }
 
@@ -280,7 +281,14 @@ button.acerca:hover {
     }
 
     .informacion h2 {
+        margin-left: 0;
         margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .informacion h2 {
+        margin-left: 1rem;
     }
 }
 
@@ -321,6 +329,7 @@ button.acerca:hover {
     width: 100%;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .conocer span {
@@ -338,6 +347,16 @@ button.acerca:hover {
         width: 393px;
         align-items: center;
     }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .segunda-parte .conocer {
+        align-items: flex-start;
+        padding-left: .5rem;
+    }
+    
 }
 
 .segunda-parte .historia {
@@ -349,7 +368,7 @@ button.acerca.hist {
     width: 60%;
     border: solid 1px #282e47;
     color:  var(--azulDos);
-    margin-left: 4rem;
+    margin-left: 10rem;
     margin-top: 6rem;
     height: 30%;
 }
@@ -365,8 +384,17 @@ button.acerca.hist {
         width: 234px;
         margin-top: 3rem;
         height: 70px;
+        margin-left: 4rem;
     }
 
+}
+
+@media screen and (max-width: 420px) {
+
+    button.acerca.hist {
+        margin-left: 4rem;
+    }
+    
 }
 
 /* tercera-parte */
@@ -515,7 +543,7 @@ button.lima img.flecha.invertida {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     background-color: var(--blanco);
-    margin-top: 3rem;
+    margin-top: 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -532,6 +560,14 @@ button.lima img.flecha.invertida {
     height: auto;
     margin: 1rem 1rem;
     position: relative;
+}
+
+@media screen and (max-width: 420px) {
+
+    .tercera-parte .contenedor-raquetas {
+        margin-top: 3rem;
+    }
+
 }
 
 @media screen and (min-width: 769px) {
